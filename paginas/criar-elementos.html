@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>criar tags</title>
+</head>
+<body>
+    <button onclick="criarImagem()">Criar Imagens utilizando documnent.createElement</button>
+
+    <script src="../assets/js/criar-elementos.js"></script>
+
+    <div>
+        <label for="campo-curso">Curso</label>
+        <input type="text" id="campo-curso">
+        <button onclick="criarCurso()">Salvar</button>
+</div>
+
+<button onclick="voltarPagina()">Voltar Pagina Anterior</button>
+<button onclick = "proximaPagina()">Próxima Pagina</button>
+<div>
+    <label for="campo-quantidade-desejada">Quantidade Desejada</label>
+    <select name="campo-quantidade-desejada" id="campo-quantidade-desejada"
+     onchange="voltarPrimeiraPagina()">
+    <option value="4">4 Itens</option>
+    <option value="8">8 Itens</option>
+    <option value="16">16 Itens</option>
+    </select>
+</div>
+
+<span id="texto-pagina"></span>
+  <table id="mercadinho">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        <button onclick="carregarProdutos()">Carregar Produtos</button>
+
+
+    </div>
+</body>
+</html>
